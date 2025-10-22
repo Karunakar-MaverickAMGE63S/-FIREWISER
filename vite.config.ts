@@ -3,6 +3,7 @@ import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
+    // Load environment variables (Vite loads VITE_ prefixed keys automatically)
     const env = loadEnv(mode, '.', '');
     return {
       server: {
@@ -11,7 +12,7 @@ export default defineConfig(({ mode }) => {
       },
       plugins: [react()],
       define: {
-        // Updated to use neutral key name LLM_API_KEY
+        // Explicitly define the non-VITE prefixed LLM key
         'process.env.LLM_API_KEY': JSON.stringify(env.LLM_API_KEY),
       },
       resolve: {
