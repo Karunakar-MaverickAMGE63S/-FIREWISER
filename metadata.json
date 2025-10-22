@@ -1,5 +1,5 @@
 {
   "name": "FIREWISER App",
-  "description": "The FIREWISER system provides personalized evacuation guidance and a Dynamic Triage Overlay for emergency responders, powered by AWS AI services.",
+  "description": "The FIREWISER system delivers highly personalized, multi-role evacuation guidance (AWS Bedrock) and a Dynamic Triage Overlay for emergency responders. It leverages AWS SageMaker for real-time environmental data modeling and is designed for seamless integration with Amazon Q for operational intelligence.",
   "requestFramePermissions": []
 }
